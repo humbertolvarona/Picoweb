@@ -1,0 +1,67 @@
+/* Colores */
+:root {
+  --bg-color-light: #f4f4f4;
+  --text-color-light: #333;
+
+  --bg-color-dark: #1e1e2f;
+  --text-color-dark: #eaeaea;
+
+  --transition-speed: 0.3s;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 400px;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+/* Tema claro */
+.light-mode {
+  background-color: var(--bg-color-light);
+  color: var(--text-color-light);
+}
+
+.light-mode button {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Tema oscuro */
+.dark-mode {
+  background-color: var(--bg-color-dark);
+  color: var(--text-color-dark);
+}
+
+.dark-mode button {
+  background-color: #ffffff;
+  color: #333;
+}
