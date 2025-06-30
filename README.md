@@ -87,7 +87,6 @@ netstat -tuln | grep <TCP-PORT>
 You can manage and run the container using Docker Compose. Example `docker-compose.yml`:
 
 ```yaml
-version: '3'
 services:
   picoweb:
     image: humbertovarona/picoweb
